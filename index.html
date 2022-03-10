@@ -3,41 +3,74 @@
     <head>
         <link rel="stylesheet" href="./css/output.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dev | JoshuaEpstein</title>
+          
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="./icon.png">
+    <link rel="manifest" href="/manifest.json">
     </head>
 
-    <body class="overflow-hidden">
-        <div class="w-full fixed row nav h-48 z-50 nav transition-2 lg:h-24 bg-[#0046FF] mx-auto" id="nav-scroll-bg">
+    <body class="overflow-x-hidden">
+        <div class="w-full fixed row nav z-50 nav transition-2 h-24 bg-[#0046FF] mx-auto" id="nav-scroll-bg">
           <nav class="w-full mx-auto fixed row h-24 nav z-50">
             <div class="nav-actions column h-24 align-middle content-center items-center pl-10">
-             <button onclick="" class="button-1 hidden lg:block">Login</button>
-             <button onclick="" class="button-2 ml-10 hidden lg:block">Sign up</button>
+             <!-- <button onclick="" class="button-1 hidden lg:block font-bold">Login</button> -->
+             <!-- <button onclick="" class="button-2 ml-10 hidden lg:block font-medium">Sign up</button> -->
             </div>
             <div class="nav-logo column h-24 place-content-center">
               <a href="./" class=" opacity-100 hover:opacity-60 w-2/12 lg:w-1/12 place-self-center transition-2"><img src="https://joshepstein.co.uk/img/white-logo.svg"></a>
             </div>
         
             <div class="nav-links column items-center justify-end align-middle h-24">
-              <a class="text-white text-opacity-60 transition-2 mr-10 hidden lg:block hover:text-opacity-100" href="./projects">Projects</a>
-              <a class="text-white text-opacity-60 transition-2 mr-10 hidden lg:block hover:text-opacity-100" href="./contact" id="nav-contact">Contact</a>
+              <!-- <a class="text-white text-opacity-60 transition-2 mr-10 hidden lg:block hover:text-opacity-100" href="./projects">Projects</a> -->
+              <!-- <a class="text-white text-opacity-60 transition-2 mr-10 hidden lg:block hover:text-opacity-100" href="./contact" id="nav-contact">Contact</a> -->
               <a class="text-white mr-20 bg-purple-700 p-2 pl-5 pr-5 rounded font-sfpro font-semibold hidden z-1000" id="live-nav" href="https://joshepstein.co.uk/twitch" title="Watch my livestream!">LIVE</a>
               <a class="text-purple-700 mr-20 bg-purple-700 p-2 pl-5 pr-5 rounded font-sfpro font-semibold hidden animate-ping absolute opacity-50" id="live-nav-ping" href="https://joshepstein.co.uk/twitch">LIVE</a>
             </div>
           </nav>
       
-          <mobile-nav class="flex flex-row nav-links items-center justify-center align-middle h-24 fixed w-full row z-1000 mt-20 lg:hidden">
+          <!-- <mobile-nav class="flex flex-row nav-links items-center justify-center align-middle h-24 fixed w-full row z-1000 mt-20 lg:hidden">
             <a class="text-white text-opacity-60 transition-2 mr-10" href="./projects">Projects</a>
             <a class="text-white text-opacity-60 transition-2" href="./contact">Contact</a>
-          </mobile-nav>
+          </mobile-nav> -->
         </div>
         <br>
         
         <div class="h-screen flex items-center justify-center px-16 overflow-hidden flex-col">
-            <h2 class="hero-4xl font-extrabold text-center">Site under maintenance.</h2>
+            <h2 class="hero-4xl font-extrabold text-center">Site under <span class="font-bold">maintenance</span>.</h2>
             <a href="https://status.joshepstein.co.uk?ref=dev.joshepstein.co.uk&redirect=https://joshepstein.co.uk">
                 <p class="text-xl font-semibold transition text-center text-black text-opacity-50 hover:text-opacity-100">Click here to stay up-to-date</p>
             </a>
         </div>
+        
+        <div class="bg-[#0046FF] w-10/12 mx-auto p-20 flex-row flex">
+          <div>
+            <a href="./"><img src="https://joshepstein.co.uk/img/white-logo.svg" class="w-4/12 ml-20"></a>
+          </div>
+          <div class="w-1/2 flex text-right justify-end md:pr-24">
+            <ul>
+              <!-- <li><a href="./" class="text-white text-opacity-75 transition hover:text-opacity-100">Home</a></li> -->
+              <!-- <li><a href="./projects" class="text-white text-opacity-50 transition hover:text-opacity-70">Projects</a></li> -->
+              <!-- <li><a href="./contact" class="text-white text-opacity-50 transition hover:text-opacity-70">Contact</a></li> -->
+            </ul>
+          </div>
+        </div>
 
-        <script src="https://joshepstein.co.uk/js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
