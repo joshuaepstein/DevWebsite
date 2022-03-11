@@ -12,6 +12,10 @@
   z-index: -15;
 }
 
+.ukraine-bg{
+  background-image: url('../img/nav-ukraine-bg.png');
+}
+
 .blurred-1{
   background-color: #0046FF;
   height: 100vh;
@@ -189,7 +193,7 @@ nav{
 
 
 .bg-gradient{
-  background-image: url("../img/gradient_bg.png");
+  background-image: url("https://joshepstein.co.uk/img/gradient_bg.png");
 
 }
 
@@ -202,7 +206,7 @@ nav{
 
 .column{
   float: left;
-  width: 33.33%;
+  width: 50%;
   display: flex;
 }
 
