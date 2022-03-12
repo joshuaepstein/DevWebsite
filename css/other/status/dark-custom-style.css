@@ -22,13 +22,9 @@
     --submit-button-background-color: #3867d6;
     --submit-button-color: #ffffff;
     --graph-opacity: 1;
-    --graph-filter: none;
+    --graph-filter: hue-rotate(90deg);
 }
   
 .svelte-jbr799{
     visibility: hidden;
-}
-
-img .svelte-a08hsz{
-    width: 50%;
 }
