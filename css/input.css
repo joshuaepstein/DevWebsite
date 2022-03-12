@@ -134,10 +134,7 @@ nav{
   justify-content: center;
   align-items: center;
   z-index: 1000000;
-  background: hsla(228, 44%, 29%, 1);
-  background: radial-gradient(circle, hsla(228, 44%, 29%, 1) 0%, hsla(228, 43%, 18%, 1) 100%);
-  background: -moz-radial-gradient(circle, hsla(228, 44%, 29%, 1) 0%, hsla(228, 43%, 18%, 1) 100%);
-  background: -webkit-radial-gradient(circle, hsla(228, 44%, 29%, 1) 0%, hsla(228, 43%, 18%, 1) 100%);
+  background: var(--main);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2a376b", endColorstr="#1b2343", GradientType=1 );
 }
 

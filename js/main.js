@@ -56,9 +56,9 @@ $(window).on("load", function(){
     if(response.data[0] == null){
       $("#live-nav").hide()
       $("#live-red-circle").hide()
-    //   document.getElementById("nav-contact").style.marginRight = "5rem"
       if(urlContent){
         console.log(urlContent + " is not live")
+        document.getElementById("nav-contact").style.marginRight = "5rem"
       } else {
         console.log("JoshuaEpstein is not live")
       }
@@ -66,6 +66,7 @@ $(window).on("load", function(){
       try {
         console.log(response.data[0].user_name + " is live")
         document.getElementById("live-nav").href = "https://twitch.tv/" + response.data[0].user_name
+        document.getElementById("live-nav-ping").href = "https://twitch.tv/" + response.data[0].user_name
         $("#live-nav").show()
         $('#live-red-circle').show()
         $("#live-nav-ping").show()
@@ -90,7 +91,7 @@ function fadeLoader(){
 }
 
 $(window).on("load",function(){
-  window.setTimeout( fadeLoader, 1000 );
+  window.setTimeout( fadeLoader, 1500 );
   // cutLoader()
   console.log(`Hidden page loader.`)
 });
