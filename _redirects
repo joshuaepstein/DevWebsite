@@ -1,5 +1,5 @@
-# Redirects from what the browser requests to what we serve
 /home              /
-/blog/my-post.php  /blog/my-post
-/news              /blog
-/cuties            https://www.petsofnetlify.com
+/youtube           https://www.youtube.com/channel/UCjpqaiYRYlqLeRsymi-s-2Q
+/twitch            https://www.twitch.tv/JoshuaEpstein
+/twitter           https://twitter.com/JoshuaEpstein17
+/discord           https://discord.gg/invite/VrfKA6GuuD
