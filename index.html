@@ -46,12 +46,19 @@
 	  <meta name="twitter:label1" content="Est. reading time">
 	  <meta name="twitter:data1" content="5 minutes">
     <script src="https://betteruptime.com/widgets/announcement.js" data-id="138820" async="async" type="text/javascript"></script>
-    </head>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://redirectrussia.org/v1.js" async integrity="sha384-K4/XEYup4kNv/qt2ucIwIH2wLT9I+z3s17CHQNMBB2/E8/Kw2VYsXQKB/7kylubA" crossorigin="anonymous"></script>
+</head>
 
     <body class="overflow-x-hidden">
-        <div class="w-full fixed row nav z-50 nav transition-2 h-48 ukraine-bg mx-auto lg:h-24" id="nav-scroll-bg">
+
+      <div class="loader-wrapper">
+        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_ebcd8zqk.json"  background="transparent"  speed="1"  style="width: 15vw; height: 15vw;"  loop  autoplay></lottie-player>
+      </div>
+
+        <div class="w-full fixed row nav z-50 nav transition-2 h-48 bg-[#0046FF] mx-auto lg:h-24" id="nav-scroll-bg">
           <nav class="w-full mx-auto fixed row h-24 nav z-50">
-            <div class="nav-actions column h-24 align-middle content-center items-center pl-10">
+            <div class="nav-actions column h-24 align-middle content-center items-center pl-10 lg:items-center column">
              <!-- <button onclick="" class="button-1 hidden lg:block font-bold">Login</button> -->
              <!-- <button onclick="" class="button-2 ml-10 hidden lg:block font-medium">Sign up</button> -->
               <!-- <a href="./" class=" opacity-100 hover:opacity-60 w-2/12 lg:w-1/12 place-self-center transition-2"><img src="img/dev-logo.svg"></a> -->
@@ -65,38 +72,49 @@
               </a>
             </div>
         
-            <div class="nav-links column items-center justify-end align-middle h-24">
-              <a class="text-black hover:font-semibold text-opacity-60 transition-2 mr-10 hidden lg:block hover:text-opacity-100 cursor-not-allowed" href="./">Projects</a>
-              <a class="text-black hover:font-semibold text-opacity-60 transition-2 mr-10 hidden lg:block hover:text-opacity-100 cursor-not-allowed" href="./">Documentation</a>
-              <a class="text-black hover:font-semibold text-opacity-60 transition-2 mr-10 hidden lg:block hover:text-opacity-100 cursor-not-allowed" href="./" id="nav-contact">Contact</a>
+            <div class="nav-links column items-center justify-end align-middle h-24 hidden lg:flex">
+              <a class="text-white text-opacity-60 transition-2 mr-10 hidden lg:block hover:text-opacity-100" href="./projects">Projects</a>
+              <a class="text-white text-opacity-60 transition-2 mr-10 hidden lg:block hover:text-opacity-100" href="./docs">Documentation</a>
+              <a class="text-white text-opacity-60 transition-2 mr-10 hidden lg:block hover:text-opacity-100" href="./contact" id="nav-contact">Contact</a>
+              <a class="text-white mr-20 bg-purple-500 p-2 pl-5 pr-5 rounded font-sfpro font-semibold hidden z-1000" id="live-nav" href="https://joshepstein.co.uk/twitch" title="Watch my livestream!">LIVE</a>
+              <a class="mr-20 bg-purple-500 text-purple-500 p-2 pl-5 pr-5 rounded font-sfpro font-semibold hidden animate-ping absolute opacity-50" id="live-nav-ping" href="https://joshepstein.co.uk/twitch">LIVE</a>
             </div>
           </nav>
       
     <mobile-nav class="flex flex-row nav-links items-center justify-center align-middle h-24 fixed w-full row z-1000 mt-20 lg:hidden">
-      <a class="text-white text-opacity-60 transition-2 mr-10" href="./coming-soon">Portfolio</a>
-      <a class="text-white text-opacity-60 transition-2 mr-10" href="https://dev.joshepstein.co.uk">Development</a>
-      <a class="text-white text-opacity-60 transition-2" href="./#contact" id="nav-contact">Contact</a>
+      <a class="text-white hover:font-semibold text-opacity-60 transition-2 mr-10 hover:text-opacity-100 cursor-not-allowed" href="./">Projects</a>
+      <a class="text-white hover:font-semibold text-opacity-60 transition-2 mr-10 hover:text-opacity-100 cursor-not-allowed" href="./">Documentation</a>
+      <a class="text-white hover:font-semibold text-opacity-60 transition-2 mr-10 hover:text-opacity-100 cursor-not-allowed" href="./" id="nav-contact">Contact</a>
     </mobile-nav>
         </div>
         <br>
         
         <div class="h-screen flex items-center justify-center px-16 overflow-hidden flex-col">
-            <h2 class="hero-4xl font-extrabold text-center">Site under <span class="font-bold">maintenance</span>.</h2>
-            <a href="https://status.joshepstein.co.uk?ref=dev.joshepstein.co.uk&redirect=https://joshepstein.co.uk">
-                <p class="text-xl font-semibold transition text-center text-black text-opacity-50 hover:text-opacity-100">Check website status here. (Click Me)</p>
-            </a>
+            <h2 class="hero-4xl font-extrabold text-center">JoshuaEpstein</h2>
+            <p class="text-xl font-semibold transition text-center text-black text-opacity-50">Development</p>
         </div>
         
         <div class="bg-[#0046FF] w-10/12 mx-auto p-20 flex-row flex">
-          <div>
-            <a href="https://joshepstein.co.uk"><img src="img/white-logo.svg" class="w-4/12 ml-20"></a>
-          </div>
-          <div class="w-1/2 flex text-right justify-end float-right items-end place-items-end">
-            <ul>
-              <li><a href="./" class="text-white text-opacity-75 transition hover:text-opacity-100">Home</a></li>
-              <li><a href="./projects" class="text-white text-opacity-50 transition hover:text-opacity-70">Projects</a></li>
-              <li><a href="./contact" class="text-white text-opacity-50 transition hover:text-opacity-70">Contact</a></li>
-            </ul>
+          <div class="flex flex-row w-full">
+            <div class="w-1/2">
+              <a href="https://joshepstein.co.uk">
+                <img src="img/white-logo.svg" class="w-2/12 ml-20">
+              </a>
+            </div>
+            <div class="w-1/2 flex text-right justify-end float-right items-end place-items-end place-content-end">
+              <ul>
+                <li><a href="./" class="text-white text-opacity-75 transition hover:text-opacity-100">Home</a></li>
+                <li><a href="./projects" class="text-white text-opacity-50 transition hover:text-opacity-70">Projects</a></li>
+                <li><a href="./docs" class="text-white text-opacity-50 transition hover:text-opacity-70">Documentation</a></li>
+                <li><a href="./contact" class="text-white text-opacity-50 transition hover:text-opacity-70">Contact</a></li>
+              </ul>
+              <ul class="ml-20">
+                <li><a href="projects?project=jebot" class="text-white text-opacity-50 transition hover:text-opacity-70">JoshuaEpstein Bot</a></li>
+                <li><a href="projects?project=wordle" class="text-white text-opacity-50 transition hover:text-opacity-70">Python Wordle</a></li>
+                <li><a href="projects?project=ultrautils" class="text-white text-opacity-50 transition hover:text-opacity-70">UltraUtils</a></li>
+                <li><a href="projects?project=twitchbot" class="text-white text-opacity-50 transition hover:text-opacity-70">Twitch Bot</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 

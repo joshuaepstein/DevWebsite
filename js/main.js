@@ -22,7 +22,6 @@ function getParameterByName(name, url) {
 
 
 $(window).on("load", function(){
-
   $.getJSON('config.json', function(data){
     $.each(data, function(i, f){
       $("#version-text").text(f.version)
@@ -95,3 +94,12 @@ $(window).on("load",function(){
   // cutLoader()
   console.log(`Hidden page loader.`)
 });
+
+
+function addScrollNumber() {
+  window.location.href = window.location.href + "&scroll=" + window.scrollY
+}
+
+function addScrollNumberQuestion() {
+  window.location.href = window.location.href + "?scroll=" + window.scrollY
+}
