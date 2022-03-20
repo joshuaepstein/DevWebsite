@@ -78,9 +78,19 @@
 
 <body class="overflow-x-hidden">
 
-  <!-- <div class="loader-wrapper">
+  <div class="loader-wrapper">
     <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_ebcd8zqk.json"  background="transparent"  speed="1"  style="width: 15vw; height: 15vw;"  loop  autoplay></lottie-player>
-  </div> -->
+  </div>
+
+  <script>
+    $(window).on("load", function() {
+      if(getParameterByName('doc')){
+        if(getParameterByName('doc') === "jediscordbot") {
+          window.location.href = "https://docs.joshepstein.co.uk/main-stuff/commands"
+        }
+      }
+    })
+  </script>
 
   <div class="w-full fixed row nav z-50 nav transition-2 h-48 bg-[#0046FF] mx-auto lg:h-24" id="nav-scroll-bg">
     <nav class="w-full mx-auto fixed row h-24 nav z-50">
@@ -127,14 +137,14 @@
     <br>
     <ul role="list" class="list-disc">
         <li>
-            <a href="https://docs.joshepstein.co.uk/je/bot">JoshuaEpstein Discord Bot</a>
+            <a href="?doc=jediscordbot">JoshuaEpstein Discord Bot</a>
         </li>
-        <li>
+        <!-- <li>
             <a>Python Wordle</a>
         </li>
         <li>
             <a>JoshuaEpstein UltraUtils (Archived)</a>
-        </li>
+        </li> -->
     </ul>
   </div>
         

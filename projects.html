@@ -44,7 +44,6 @@
 	<meta name="twitter:site" content="@joshuaepstein17">
 	<meta name="twitter:label1" content="Est. reading time">
 	<meta name="twitter:data1" content="5 minutes">
-  <script src="https://betteruptime.com/widgets/announcement.js" data-id="138820" async="async" type="text/javascript"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://redirectrussia.org/v1.js" async integrity="sha384-K4/XEYup4kNv/qt2ucIwIH2wLT9I+z3s17CHQNMBB2/E8/Kw2VYsXQKB/7kylubA" crossorigin="anonymous"></script>
 </head>
@@ -82,57 +81,122 @@
     </nav>
       
     <mobile-nav class="flex flex-row nav-links items-center justify-center align-middle h-24 fixed w-full row z-1000 mt-20 lg:hidden">
-      <a class="text-white hover:font-semibold text-opacity-60 transition-2 mr-10 hover:text-opacity-100 cursor-not-allowed" href="./">Projects</a>
-      <a class="text-white hover:font-semibold text-opacity-60 transition-2 mr-10 hover:text-opacity-100 cursor-not-allowed" href="./">Documentation</a>
-      <a class="text-white hover:font-semibold text-opacity-60 transition-2 mr-10 hover:text-opacity-100 cursor-not-allowed" href="./" id="nav-contact">Contact</a>
+      <a class="text-white font-semibold transition-2 mr-10 hover:text-opacity-100" href="./projects">Projects</a>
+      <a class="text-white text-opacity-60 transition-2 mr-10 hover:text-opacity-100" href="./docs">Documentation</a>
+      <a class="text-white text-opacity-60 transition-2 mr-10 hover:text-opacity-100" href="./contact" id="nav-contact">Contact</a>
     </mobile-nav>
   </div>
   
   <br>
         
-  <div class="h-[50vh] flex items-center justify-center px-16 overflow-hidden flex-col" style="background-image: url('./img/preview-img.png')">
-    <h2 class="hero-4xl font-extrabold text-center text-white">Projects</h2>
-    <p class="text-xl font-semibold transition text-center text-white text-opacity-50">JoshuaEpstein</p>
-    <p class="text-center text-white text-opacity-25">This page has not been finished, you cannot view the pages per project.</p>
-  </div>
-
-  <div class="flex items-center justify-center overflow-hidden flex-col py-16">
-    <div class="flex">
-      <div class="mr-40"> 
-        <a href="?project=ultrautils">
-          <div class="bg-gray-300 lg:p-10 hover:bg-gray-100 transition">
-            <img src="./img/projects/ultrautils/icon.svg" class="w-32">
-            <h3 class="text-2xl">UltraUtils</h3>
-            <p class="text-black text-opacity-75">A Minecraft Mod</p>
-          </div>
-        </a>
-
-        <a href="?project=wordle">
-          <div class="bg-gray-300 lg:p-10 mt-10 hover:bg-gray-100 transition">
-            <img src="./img/projects/wordle/logo.svg" class="w-44">
-            <p class="text-black text-opacity-75">Made in replit</p>
-          </div>
-        </a>
-      </div>
-      <div> 
-        <a href="?project=jebot">
-          <div class="bg-gray-300 lg:p-10 hover:bg-gray-100 transition">
-            <img src="./img/projects/jediscordbot/logo.svg" class="w-32">
-            <h3 class="text-2xl">Discord Bot</h3>
-            <p class="text-black text-opacity-75">Private JoshuaEpstein Bot</p>
-          </div>
-        </a>
-
-        <a href="?project=twitchbot">
-          <div class="bg-gray-300 lg:p-10 mt-10 hover:bg-gray-100 transition">
-            <img src="./img/projects/jetwitchbot/logo.svg" class="w-32">
-            <h3 class="text-2xl">Twitch Bot</h3>
-            <p class="text-black text-opacity-75">Private JoshuaEpstein Bot</p>
-          </div>
-        </a>
+  <div class="mt-24 lg:mt-0 transition" id="default">
+    <div class="h-[50vh] flex items-center justify-center px-16 overflow-hidden flex-col" style="background-image: url('./img/preview-img.png')">
+      <h2 class="hero-4xl font-extrabold text-center text-white">Projects</h2>
+      <p class="text-xl font-semibold transition text-center text-white text-opacity-50">JoshuaEpstein</p>
+      <p class="text-center text-red-600 font-medium text-xl" id="doesnt-exist"></p>
+    </div>
+  
+    <div class="flex items-center justify-center overflow-hidden flex-col py-16">
+      <div class="flex">
+        <div class="mr-40"> 
+          <a href="?project=ultrautils">
+            <div class="bg-gray-300 p-2 lg:p-10 hover:bg-gray-100 transition">
+              <img src="./img/projects/ultrautils/icon.svg" class="w-32">
+              <h3 class="text-2xl">UltraUtils</h3>
+              <p class="text-black text-opacity-75">A Minecraft Mod</p>
+            </div>
+          </a>
+  
+          <a href="?project=wordle">
+            <div class="bg-gray-300 p-2 lg:p-10 mt-10 hover:bg-gray-100 transition">
+              <img src="./img/projects/wordle/logo.svg" class="w-44">
+              <p class="text-black text-opacity-75">Made in replit</p>
+            </div>
+          </a>
+        </div>
+        <div> 
+          <a href="?project=jebot">
+            <div class="bg-gray-300 p-2 lg:p-10 hover:bg-gray-100 transition">
+              <img src="./img/projects/jediscordbot/logo.svg" class="w-32">
+              <h3 class="text-2xl">Discord Bot</h3>
+              <p class="text-black text-opacity-75">Private JoshuaEpstein Bot</p>
+            </div>
+          </a>
+  
+          <!-- <a href="?project=twitchbot">
+            <div class="bg-gray-300 p-2 lg:p-10 mt-10 hover:bg-gray-100 transition">
+              <img src="./img/projects/jetwitchbot/logo.svg" class="w-32">
+              <h3 class="text-2xl">Twitch Bot</h3>
+              <p class="text-black text-opacity-75">Private JoshuaEpstein Bot</p>
+            </div>
+          </a> -->
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="mt-24 lg:mt-12 transition hidden" id="ultrautils">
+    <div class="h-[50vh] flex items-center justify-center px-16 overflow-hidden flex-col" style="background-image: url('./img/projects/ultrautils/bg.png');">
+      <h2 class="hero-4xl font-extrabold text-center text-white">UltraUtils</h2>
+      <p class="text-xl font-semibold transition text-center text-white text-opacity-50"><span class="font-extrabold">Archived</span> Minecraft Mod</p>
+    </div>
+  
+    <div class="flex items-center justify-center overflow-hidden flex-col py-16 text-center lg:px-20">
+      <h2 class="text-2xl font-extrabold mb-3">A quick brief</h2>
+      <p>This mod was made with the idea of being in a modpack. You would play minecraft normally, without mods, defeat the ender dragon and then get into the modded part. If this sounds familiar, that is because it does, This is what vault hunters (a modpack by iskallia dev team) is about. I am a big fan of vault hunters, but I knew that I couldn't play this modpack with my friends. So I decided to get features from VaultHunters and make my own mod with some of those features. If you would like to learn about VaultHunters, you can find out more here: <a href="https://vaulthunters.gg" class="text-blue-700 font-semibold underline text-opacity-75 hover:text-opacity-100 transition">https://vaulthunters.gg</a></p>
+      <br>
+      <a class="text-black transition text-opacity-75 hover:text-opacity-100" href="./projects">View other projects</a>
+    </div>
+  </div>
+
+  <div class="mt-24 lg:mt-12 transition hidden" id="wordle">
+    <div class="h-[50vh] flex items-center justify-center px-16 overflow-hidden flex-col" style="background-image: url('./img/projects/wordle/bg.png');">
+      <h2 class="hero-4xl font-extrabold text-center text-white">Wordle</h2>
+      <p class="text-xl font-semibold transition text-center text-white text-opacity-50">A <span class="font-extrabold">Python</span> project.</p>
+    </div>
+  
+    <div class="flex items-center justify-center overflow-hidden flex-col py-16 text-center lg:px-20">
+      <h2 class="text-2xl font-extrabold mb-3">A quick brief</h2>
+      <p>I got given a challenge to create a version of Wordle in python (using replit). So I did. To begin, you can view the project here: <a href="./wordle" class="text-blue-700 font-semibold underline text-opacity-75 hover:text-opacity-100 transition">https://dev.joshepstein.co.uk/wordle</a> | Lets get into the step by step explanation.</p>
+      <br>
+      <h2 class="text-2xl font-extrabold mb-3">Step by Step</h2>
+      <p>First few lines: imports random, colored, replit, time and audio from replit - It then sets attempts to 0, creates 2 arrays, one with acceptable words and one with the random guessable word, it gets these from a file.<br>It then asks for a 5 letter word, checks if it debug commands (I won't get into that now) and makes sure that the word is 5 letters and is in the acceptable words array.<br>Next, it checks what characters are in the correct place, wrong place, and are in the word but in the wrong place. Adds the letters to an "output" variable with the colors to show the correct/wrong/in the word information.<br>Finally, it repeats these steps until the word is guessed and sends how many attempts it took you.</p>
+      <br>
+      <a class="text-black transition text-opacity-75 hover:text-opacity-100" href="./projects">View other projects</a>
+    </div>
+  </div>
+
+  <div class="mt-24 lg:mt-12 transition hidden" id="jebot">
+    <div class="h-[50vh] flex items-center justify-center px-16 overflow-hidden flex-col" style="background-image: url('./img/projects/jediscordbot/bg.png');">
+      <h2 class="hero-4xl font-extrabold text-center text-white">[je] Discord Bot</h2>
+      <p class="text-xl font-semibold transition text-center text-white text-opacity-50">For <span class="font-extrabold">a private discord</span> server</p>
+    </div>
+  
+    <div class="flex items-center justify-center overflow-hidden flex-col py-16 text-center lg:px-20">
+      <h2 class="text-2xl font-extrabold mb-3">A quick brief</h2>
+      <p>The bot was made for the JoshuaEpstein discord server, the bots code is not public, but there is a page with all commands and features.</p>
+      <br>
+      <h2 class="text-2xl font-extrabold mb-3">Documentation</h2>
+      <p>You find the documentation for the discord bot here: <a class="text-blue-700 font-semibold underline text-opacity-75 hover:text-opacity-100 transition" href="./docs?doc=jediscordbot">https://dev.joshepstein.co.uk/docs?docs=jediscordbot</a></p>
+      <a class="text-black transition text-opacity-75 hover:text-opacity-100" href="./projects">View other projects</a>
+    </div>
+  </div>
+<!-- 
+  <div class="mt-24 lg:mt-12 transition hidden" id="twitchbot">
+    <div class="h-[50vh] flex items-center justify-center px-16 overflow-hidden flex-col" style="background-image: url('./img/projects/jediscordbot/bg.png');">
+      <h2 class="hero-4xl font-extrabold text-center text-white">[je] Discord Bot</h2>
+      <p class="text-xl font-semibold transition text-center text-white text-opacity-50">For <span class="font-extrabold">a private discord</span> server</p>
+    </div>
+  
+    <div class="flex items-center justify-center overflow-hidden flex-col py-16 text-center lg:px-20">
+      <h2 class="text-2xl font-extrabold mb-3">A quick brief</h2>
+      <p>The bot was made for the JoshuaEpstein discord server, the bots code is not public, but there is a page with all commands and features.</p>
+      <br>
+      <h2 class="text-2xl font-extrabold mb-3">Documentation</h2>
+      <p>You find the documentation for the discord bot here: <a class="text-blue-700 font-semibold underline text-opacity-75 hover:text-opacity-100 transition" href="./docs?docs=jediscordbot">https://dev.joshepstein.co.uk/docs?docs=jediscordbot</a></p>
+      <a class="text-black transition text-opacity-75 hover:text-opacity-100" href="./projects">View other projects</a>
+    </div>
+  </div> -->
         
   <div class="bg-[#0046FF] w-10/12 mx-auto p-20 flex-row flex">
     <div class="flex flex-row w-full">
@@ -152,12 +216,13 @@
           <li><a href="projects?project=jebot" class="text-white text-opacity-50 transition hover:text-opacity-70">JoshuaEpstein Bot</a></li>
           <li><a href="projects?project=wordle" class="text-white text-opacity-50 transition hover:text-opacity-70">Python Wordle</a></li>
           <li><a href="projects?project=ultrautils" class="text-white text-opacity-50 transition hover:text-opacity-70">UltraUtils</a></li>
-          <li><a href="projects?project=twitchbot" class="text-white text-opacity-50 transition hover:text-opacity-70">Twitch Bot</a></li>
+          <!-- <li><a href="projects?project=twitchbot" class="text-white text-opacity-50 transition hover:text-opacity-70">Twitch Bot</a></li> -->
         </ul>
       </div>
     </div>
   </div>
 
   <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
 </body>
 </html>
